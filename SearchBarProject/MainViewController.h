@@ -15,5 +15,7 @@
 @property (nonatomic, strong) IBOutlet MDSearchBar * searchBar;
 @property (nonatomic, strong) IBOutlet MDSearchBarController * searchBarController;
 
+@property (nonatomic) int count;
+
 
 @end

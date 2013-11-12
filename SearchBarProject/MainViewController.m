@@ -16,13 +16,11 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.searchBarController.searchBarView.frame = self.searchBar.frame;
-//    [self.searchBar.superview addSubview:self.searchBarController.searchBarView];
+    [self.searchBar.superview addSubview:self.searchBarController.searchBarView];
     [self.searchBar removeFromSuperview];
     self.searchBarController.delegate= self;
     
     self.searchBar = self.searchBarController.searchBarView;
-    [self.navigationController.navigationBar addSubview:self.searchBar];
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -33,7 +31,7 @@
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return self.count;
 }
 
 
@@ -51,9 +49,7 @@
 }
 
 -(void)searchBar:(MDSearchBarController *)searchBarController searchWithText:(NSString *)text{
-    int i = 5;
+    self.count = text.length;
     [self.searchBarController reloadData];
-    
-    NSLog(@"delegate = %@", self.searchBarController.searchView.searchTable.delegate);
 }
 @end

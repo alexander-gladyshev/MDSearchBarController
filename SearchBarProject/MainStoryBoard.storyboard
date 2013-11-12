@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-524" y="-156"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main View Controller - MDSearchBarController-->
         <scene sceneID="tKC-RD-Fgl">
             <objects>
                 <viewController id="wFi-5o-71t" customClass="MainViewController" sceneMemberID="viewController">
@@ -37,9 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="O39-By-f4o">
-                        <nil key="title"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="MDSearchBarController" id="O39-By-f4o"/>
                     <connections>
                         <outlet property="searchBar" destination="lhb-u4-0u4" id="YRZ-7O-lV1"/>
                         <outlet property="searchBarController" destination="gpv-17-ZNR" id="LyT-Ur-aGH"/>

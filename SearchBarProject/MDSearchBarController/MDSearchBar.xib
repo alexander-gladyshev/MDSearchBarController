@@ -20,6 +20,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.26666668059999998" green="0.63921570780000003" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -33,7 +34,7 @@
                     <textInputTraits key="textInputTraits" returnKeyType="search"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="0.26666668059999998" green="0.63921570780000003" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.96862751245498657" alpha="1" colorSpace="deviceRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="cancelButton" destination="Srb-PF-hxQ" id="DJM-7C-XMX"/>

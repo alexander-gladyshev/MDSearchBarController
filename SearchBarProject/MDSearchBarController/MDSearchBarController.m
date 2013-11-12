@@ -119,12 +119,9 @@
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
-    [self reloadData];
     if ([self.delegate respondsToSelector:@selector(searchBar:searchWithText:)]){
-        [self.delegate searchBar:self searchWithText:textField.text];
+        [self.delegate searchBar:self searchWithText:[textField.text stringByReplacingCharactersInRange:range withString:string]];
     }
-    
     return YES;
 }
 
